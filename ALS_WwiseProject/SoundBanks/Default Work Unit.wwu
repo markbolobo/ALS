@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CD8AF4FE-420E-4860-B38B-300C98FCD966}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CD8AF4FE-420E-4860-B38B-300C98FCD966}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Master" ID="{0516A9BE-B5B2-44C2-AD75-22918E125F95}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{29944D10-7521-43EA-9462-30B5F6ECE858}" WorkUnitID="{29944D10-7521-43EA-9462-30B5F6ECE858}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Amb2D" ID="{4126984C-BC11-44EE-B44F-2E5D25DEBADB}" WorkUnitID="{29944D10-7521-43EA-9462-30B5F6ECE858}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Amb3D" ID="{BDA39898-5134-4C19-9A0F-39DD3F05B259}" WorkUnitID="{29944D10-7521-43EA-9462-30B5F6ECE858}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Locomotion" ID="{1CE47A75-FF69-4FD2-8E8B-A59BC0E7298E}" WorkUnitID="{29944D10-7521-43EA-9462-30B5F6ECE858}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

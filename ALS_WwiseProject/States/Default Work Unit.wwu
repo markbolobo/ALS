@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BE46D1E5-4AF7-4A37-A747-E5757C81D378}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{BE46D1E5-4AF7-4A37-A747-E5757C81D378}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MetroStayTime" ID="{6470B65B-B357-4BFB-B91E-79D3BD1EACD2}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{9E17F375-D873-49BD-A83F-08F0764B2D06}"/>
+						<State Name="Shot" ID="{E668A253-8D01-4EC3-951E-68ACD3E1A1AF}"/>
+						<State Name="Middle" ID="{3AE8E240-885D-4BE8-9C80-A3C5AC6A1E09}"/>
+						<State Name="Long" ID="{ED2A397C-05AB-4A5A-96AA-C21BADDF7129}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

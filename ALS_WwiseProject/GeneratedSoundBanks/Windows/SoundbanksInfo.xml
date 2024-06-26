@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{79F16001-BF36-BA5D-9CDA-297E7E3A0A9E}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{DF7497E8-E480-48C1-9440-C2BF99F6E632}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{FB1123EE-D40E-4E21-B92D-1A59A6D8CE8B}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="529726550" Name="Env" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Env" GUID="{02DD0DAD-18F3-4E9D-BF94-53B6D5764320}"/>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="1017222595" Name="LowHealth" ObjectPath="\Game Parameters\Default Work Unit\LowHealth" GUID="{A02ED3EB-6878-46BE-9A77-3986460F023F}"/>
+				<GameParameter Id="3172998072" Name="MetroStayTime" ObjectPath="\Game Parameters\Default Work Unit\MetroStayTime" GUID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3172998072" Name="MetroStayTime" ObjectPath="\States\Default Work Unit\MetroStayTime" GUID="{6470B65B-B357-4BFB-B91E-79D3BD1EACD2}">
+					<States>
+						<State Id="251412229" Name="Shot" ObjectPath="\States\Default Work Unit\MetroStayTime\Shot" GUID="{E668A253-8D01-4EC3-951E-68ACD3E1A1AF}"/>
+						<State Id="674228435" Name="Long" ObjectPath="\States\Default Work Unit\MetroStayTime\Long" GUID="{ED2A397C-05AB-4A5A-96AA-C21BADDF7129}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\MetroStayTime\None" GUID="{9E17F375-D873-49BD-A83F-08F0764B2D06}"/>
+						<State Id="1026627430" Name="Middle" ObjectPath="\States\Default Work Unit\MetroStayTime\Middle" GUID="{3AE8E240-885D-4BE8-9C80-A3C5AC6A1E09}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="4056684167" Type="User" GUID="{0516A9BE-B5B2-44C2-AD75-22918E125F95}" Language="SFX" Hash="{AF5C6689-788F-7029-B84D-C072F8EA2107}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="211537517" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient-metro.wav</ShortName>
+					<CachePath>SFX/ambient-metro_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="414081317" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient-metro2.wav</ShortName>
+					<CachePath>SFX/ambient-metro2_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1081496484" Name="Play_Amb_Metro" ObjectPath="\Events\Default Work Unit\Amb2D\Play_Amb_Metro" GUID="{3F3061D7-6B79-43C8-B37E-DD7C82589BE2}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="211537517"/>
+						<MediaRef Id="414081317"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="829934790" Name="Stop_Amb_Metro" ObjectPath="\Events\Default Work Unit\Amb2D\Stop_Amb_Metro" GUID="{D0DE14CF-CD2D-4E36-97F5-439004374790}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3172998072" Name="MetroStayTime" ObjectPath="\Game Parameters\Default Work Unit\MetroStayTime" GUID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{F5ED6C1D-A6DD-579E-D79A-E403760E34D5}</FileHash>
+</SoundBanksInfo>

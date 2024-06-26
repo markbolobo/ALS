@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MetroStayTime" ID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="LowHealth" ID="{A02ED3EB-6878-46BE-9A77-3986460F023F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="5"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
