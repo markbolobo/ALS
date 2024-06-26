@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	829934790	Stop_Amb_Metro			\Default Work Unit\Amb2D\Stop_Amb_Metro	
+	1081496484	Play_Amb_Metro			\Default Work Unit\Amb2D\Play_Amb_Metro	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3172998072	MetroStayTime			\Default Work Unit\MetroStayTime	
+
+State	ID	Name	State Group			Notes
+	251412229	Shot	MetroStayTime			
+	674228435	Long	MetroStayTime			
+	748895195	None	MetroStayTime			
+	1026627430	Middle	MetroStayTime			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3172998072	MetroStayTime			\Default Work Unit\MetroStayTime	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	211537517	ambient-metro	D:\Project\ALS\ALS_WwiseProject\.cache\Windows\SFX\ambient-metro_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\2D\Amb_Metro\ambient-metro		5292096
+	414081317	ambient-metro2	D:\Project\ALS\ALS_WwiseProject\.cache\Windows\SFX\ambient-metro2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Env\2D\Amb_Metro\ambient-metro2		25028852
+

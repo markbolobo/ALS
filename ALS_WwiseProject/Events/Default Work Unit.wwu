@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29944D10-7521-43EA-9462-30B5F6ECE858}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{29944D10-7521-43EA-9462-30B5F6ECE858}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Amb2D" ID="{4126984C-BC11-44EE-B44F-2E5D25DEBADB}" ShortID="343535917">
+					<ChildrenList>
+						<Event Name="Play_Amb_Metro" ID="{3F3061D7-6B79-43C8-B37E-DD7C82589BE2}">
+							<ChildrenList>
+								<Action Name="" ID="{29AF7B15-6E24-4299-9C2F-3D164F4E97AD}" ShortID="749015248">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_Metro" ID="{EBEB6DFD-386B-44A3-9CBD-41E03FCC83A0}" WorkUnitID="{05269700-DB81-4DA8-A073-B8A5E45EBEAD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Amb_Metro" ID="{D0DE14CF-CD2D-4E36-97F5-439004374790}">
+							<ChildrenList>
+								<Action Name="" ID="{52BED805-4796-4ED0-87DB-B213D050AF08}" ShortID="521279080">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb_Metro" ID="{EBEB6DFD-386B-44A3-9CBD-41E03FCC83A0}" WorkUnitID="{05269700-DB81-4DA8-A073-B8A5E45EBEAD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Amb3D" ID="{BDA39898-5134-4C19-9A0F-39DD3F05B259}" ShortID="122863891"/>
+				<Folder Name="Locomotion" ID="{1CE47A75-FF69-4FD2-8E8B-A59BC0E7298E}" ShortID="191609275"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

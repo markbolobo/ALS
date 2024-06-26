@@ -1,0 +1,74 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "4056684167",
+    "Type": "User",
+    "GUID": "{0516A9BE-B5B2-44C2-AD75-22918E125F95}",
+    "Language": "SFX",
+    "Hash": "{AF5C6689-788F-7029-B84D-C072F8EA2107}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Master",
+    "ShortName": "Master",
+    "Path": "Master.bnk",
+    "Media": [
+     {
+      "Id": "211537517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambient-metro.wav",
+      "CachePath": "SFX/ambient-metro_FBC78EF0.wem"
+     },
+     {
+      "Id": "414081317",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambient-metro2.wav",
+      "CachePath": "SFX/ambient-metro2_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1081496484",
+      "Name": "Play_Amb_Metro",
+      "ObjectPath": "\\Events\\Default Work Unit\\Amb2D\\Play_Amb_Metro",
+      "GUID": "{3F3061D7-6B79-43C8-B37E-DD7C82589BE2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "211537517"
+       },
+       {
+        "Id": "414081317"
+       }
+      ]
+     },
+     {
+      "Id": "829934790",
+      "Name": "Stop_Amb_Metro",
+      "ObjectPath": "\\Events\\Default Work Unit\\Amb2D\\Stop_Amb_Metro",
+      "GUID": "{D0DE14CF-CD2D-4E36-97F5-439004374790}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3172998072",
+      "Name": "MetroStayTime",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MetroStayTime",
+      "GUID": "{EB9E41B9-40E0-434E-80DC-6D862F18A33D}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{141FCA00-A45D-D483-2B7B-48A0018AD871}"
+ }
+}

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{05269700-DB81-4DA8-A073-B8A5E45EBEAD}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{05269700-DB81-4DA8-A073-B8A5E45EBEAD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Env" ID="{90D28A50-AD1B-4505-9229-A8686774210C}" ShortID="771562351">
+					<ChildrenList>
+						<Folder Name="2D" ID="{6CE342D1-9C8B-4D1E-B697-07D17FBBD57A}" ShortID="888004465">
+							<ChildrenList>
+								<BlendContainer Name="Amb_Metro" ID="{EBEB6DFD-386B-44A3-9CBD-41E03FCC83A0}" ShortID="282243970">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8808C24C-8325-4298-A021-A2B1327C6437}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C791356F-3A82-4429-AD8A-729D99D8C907}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ambient-metro" ID="{8CF90EAD-6EF1-49A9-9F68-ED1B6C060F69}" ShortID="369287259">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8808C24C-8325-4298-A021-A2B1327C6437}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C791356F-3A82-4429-AD8A-729D99D8C907}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambient-metro" ID="{E23846B9-4DD9-45A9-9E68-7AF313493342}">
+													<Language>SFX</Language>
+													<AudioFile>ambient-metro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211537517"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="MetroStayTime" ID="{6470B65B-B357-4BFB-B91E-79D3BD1EACD2}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Long" ID="{ED2A397C-05AB-4A5A-96AA-C21BADDF7129}"/>
+														<CustomState Name="" ID="{265C5AC6-B0F0-47F2-9CDA-EEBA334929B0}" ShortID="606590265">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Middle" ID="{3AE8E240-885D-4BE8-9C80-A3C5AC6A1E09}"/>
+														<CustomState Name="" ID="{952D0B6B-A08C-42DC-AFD1-43C5E364FD95}" ShortID="862900491">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Shot" ID="{E668A253-8D01-4EC3-951E-68ACD3E1A1AF}"/>
+														<CustomState Name="" ID="{EA446E33-E7E2-4D17-9205-A5F62B6E9368}" ShortID="295444999"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{D1FF1CA4-8B8B-484F-AC1D-D155763ABD2A}" ShortID="884743528">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MetroStayTime" ID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}" WorkUnitID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{FAFB1079-F9BD-4B8F-BCD6-62CECAB48D76}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<ActiveSourceList>
+												<ActiveSource Name="ambient-metro" ID="{E23846B9-4DD9-45A9-9E68-7AF313493342}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambient-metro2" ID="{D70D01B2-73C3-4D51-8F34-CADAE01F65D9}" ShortID="514366343">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8808C24C-8325-4298-A021-A2B1327C6437}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C791356F-3A82-4429-AD8A-729D99D8C907}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambient-metro2" ID="{770F5CD6-4AEC-4A56-A635-67EE2B9B43A0}">
+													<Language>SFX</Language>
+													<AudioFile>ambient-metro2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="414081317"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="MetroStayTime" ID="{6470B65B-B357-4BFB-B91E-79D3BD1EACD2}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Long" ID="{ED2A397C-05AB-4A5A-96AA-C21BADDF7129}"/>
+														<CustomState Name="" ID="{7D365213-8548-4966-BDB9-0026E7CACD43}" ShortID="82681042">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Middle" ID="{3AE8E240-885D-4BE8-9C80-A3C5AC6A1E09}"/>
+														<CustomState Name="" ID="{940FFE4B-E5F8-46DD-9B3D-6513B57FC584}" ShortID="146733859"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Shot" ID="{E668A253-8D01-4EC3-951E-68ACD3E1A1AF}"/>
+														<CustomState Name="" ID="{65825CBE-F325-45A5-936E-3BA94FBAD21D}" ShortID="193581912">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="ambient-metro2" ID="{770F5CD6-4AEC-4A56-A635-67EE2B9B43A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{FFC866C3-F456-4D33-A315-F86DB0C6B8E5}"/>
+									</PositioningInfo>
+									<BlendTrackList>
+										<BlendTrack Name="StayTime" ID="{32477592-A1A0-44F7-A4B3-28EE03EDC057}" ShortID="220652011">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="MetroStayTime" ID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}" WorkUnitID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{87070DF8-D089-4D2E-A05D-D4A9FAA6F760}" ShortID="1006767614">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MetroStayTime" ID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}" WorkUnitID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{553A47FB-6619-46CC-B681-EC400379841D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.01356</XPos>
+																						<YPos>-0.39141</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.99849</XPos>
+																						<YPos>-0.34611</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.87048</XPos>
+																						<YPos>-0.4766</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{D9F0FDC8-B2A6-40DF-83E7-F2B0A3B0B48E}" ShortID="391573811">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MetroStayTime" ID="{EB9E41B9-40E0-434E-80DC-6D862F18A33D}" WorkUnitID="{3FC5D1B2-2126-4887-A64B-3B5C3E4B9406}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{172DF5D0-0323-42F2-93C3-8A38EED0540B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-774</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.0788253477588872</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>774</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambient-metro" ID="{8CF90EAD-6EF1-49A9-9F68-ED1B6C060F69}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>1.94976816074189</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambient-metro2" ID="{D70D01B2-73C3-4D51-8F34-CADAE01F65D9}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1.11514683153014</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="3D" ID="{228B3464-2DA3-4F9D-A20A-261730ED5EC6}" ShortID="1007625049"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{2D017C36-4878-4895-9CC5-11CD4C4E2176}" ShortID="514535024"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
